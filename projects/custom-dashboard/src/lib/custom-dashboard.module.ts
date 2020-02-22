@@ -1,12 +1,11 @@
 import { NgModule } from '@angular/core';
-import { CustomDashboardComponent } from './custom-dashboard.component';
 
 
 
 @NgModule({
-  declarations: [CustomDashboardComponent],
+  declarations: [],
   imports: [
   ],
-  exports: [CustomDashboardComponent]
+  exports: []
 })
 export class CustomDashboardModule { }
