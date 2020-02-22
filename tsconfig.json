@@ -17,7 +17,13 @@
     "lib": [
       "es2018",
       "dom"
-    ]
+    ],
+    "paths": {
+      "custom-dashboard": [
+        "dist/custom-dashboard/custom-dashboard",
+        "dist/custom-dashboard"
+      ]
+    }
   },
   "angularCompilerOptions": {
     "fullTemplateTypeCheck": true,
