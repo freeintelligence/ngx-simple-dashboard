@@ -12,3 +12,5 @@ export * from './lib/interfaces/content-header.interface';
 
 export * from './lib/components/simple/simple.component';
 export * from './lib/components/sidenav-section/sidenav-section.component';
+
+export * from './lib/services/nav.service';
