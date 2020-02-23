@@ -3,14 +3,17 @@
 </mat-toolbar>
 
 <mat-drawer-container class="drawer-container">
-  <mat-drawer mode="side" class="drawer-side" opened>
+  <mat-drawer #drawer mode="side" class="drawer-side" opened>
     <mat-nav-list>
       <custom-dashboard-sidenav-section *ngFor="let section of menu.sections" [section]="section"></custom-dashboard-sidenav-section>
     </mat-nav-list>
   </mat-drawer>
 
   <mat-drawer-content class="drawer-content">
-    <mat-toolbar [color]="content?.header?.color"></mat-toolbar>
+    <mat-toolbar [color]="content?.header?.color">
+      <button mat-icon-button (click)="drawer.toggle()"><mat-icon>menu</mat-icon></button>
+      <span [innerHtml]="navService.generateTitleHTML()"></span>
+    </mat-toolbar>
 
     <ng-content></ng-content>
   </mat-drawer-content>
