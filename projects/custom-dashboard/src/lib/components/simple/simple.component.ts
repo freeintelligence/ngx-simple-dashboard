@@ -1,4 +1,4 @@
-import { Component, OnInit, Input, ContentChild } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 import { Menu } from './../../interfaces/menu.interface';
 import { Header } from './../../interfaces/header.interface';
 import { Content } from './../../interfaces/content.interface';

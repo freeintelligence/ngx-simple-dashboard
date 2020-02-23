@@ -15,6 +15,8 @@
       <span [innerHtml]="navService.generateTitleHTML()"></span>
     </mat-toolbar>
 
-    <ng-content></ng-content>
+    <div class="content-container">
+      <ng-content></ng-content>
+    </div>
   </mat-drawer-content>
 </mat-drawer-container>
