@@ -1,0 +1,12 @@
+.drawer-container {
+  width: 100%;
+  height: calc(100% - 64px);
+}
+
+.drawer-side {
+  width: 332px;
+}
+
+.drawer-content {
+  height: 100%;
+}
