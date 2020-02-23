@@ -1,5 +1,6 @@
 import { Component, OnInit, Input } from '@angular/core';
 import { Menu } from './../../interfaces/menu.interface';
+import { Header } from './../../interfaces/header.interface';
 
 @Component({
   selector: 'custom-dashboard-simple',
@@ -8,7 +9,7 @@ import { Menu } from './../../interfaces/menu.interface';
 })
 export class SimpleComponent implements OnInit {
 
-  @Input('headerTitle') headerTitle: string = 'Dashboard';
+  @Input('header') header: Header;
   @Input('menu') menu: Menu;
 
   constructor() { }

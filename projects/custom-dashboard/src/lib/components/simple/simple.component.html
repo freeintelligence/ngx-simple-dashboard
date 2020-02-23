@@ -1,5 +1,5 @@
 <mat-toolbar color="primary">
-  <span>{{ headerTitle }}</span>
+  <span *ngIf="header?.title">{{ header?.title }}</span>
 </mat-toolbar>
 
 <mat-drawer-container class="drawer-container">

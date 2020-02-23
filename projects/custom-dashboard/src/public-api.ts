@@ -4,6 +4,7 @@
 
 export * from './lib/custom-dashboard.module';
 
+export * from './lib/interfaces/header.interface';
 export * from './lib/interfaces/menu.interface';
 export * from './lib/interfaces/menu-section.interface';
 
