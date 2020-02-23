@@ -1,13 +1,3 @@
 a {
   text-decoration: none;
 }
-
-.item {
-  height: auto !important;
-  padding-top: 32px;
-}
-
-.wrap {
-  word-wrap: break-word !important; 
-  white-space: pre-wrap !important;
-}

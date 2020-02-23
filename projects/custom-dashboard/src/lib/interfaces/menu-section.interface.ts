@@ -12,6 +12,6 @@ export interface MenuSectionItem {
 }
 
 export interface MenuSection {
-  title: string;
+  title?: string;
   items: MenuSectionItem[],
 }

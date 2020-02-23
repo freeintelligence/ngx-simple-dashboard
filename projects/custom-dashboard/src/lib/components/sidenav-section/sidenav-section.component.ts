@@ -1,5 +1,5 @@
 import { Component, OnInit, Input } from '@angular/core';
-import { Section } from '../../interfaces/section.interface';
+import { MenuSection } from '../../interfaces/menu-section.interface';
 
 @Component({
   selector: 'custom-dashboard-sidenav-section',
@@ -8,7 +8,7 @@ import { Section } from '../../interfaces/section.interface';
 })
 export class SidenavSectionComponent implements OnInit {
 
-  @Input('section') section: Section;
+  @Input('section') section: MenuSection;
 
   constructor() { }
 

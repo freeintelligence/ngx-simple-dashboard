@@ -9,7 +9,7 @@ import { Menu } from './../../interfaces/menu.interface';
 export class SimpleComponent implements OnInit {
 
   @Input('headerTitle') headerTitle: string = 'Dashboard';
-  @Input('menu') menu: Menu[] = [];
+  @Input('menu') menu: Menu;
 
   constructor() { }
 
