@@ -1,4 +1,4 @@
-<mat-toolbar color="primary">
+<mat-toolbar [color]="header?.color">
   <span *ngIf="header?.title">{{ header?.title }}</span>
 </mat-toolbar>
 
@@ -10,6 +10,8 @@
   </mat-drawer>
 
   <mat-drawer-content class="drawer-content">
+    <mat-toolbar [color]="content?.header?.color"></mat-toolbar>
+
     <ng-content></ng-content>
   </mat-drawer-content>
 </mat-drawer-container>
