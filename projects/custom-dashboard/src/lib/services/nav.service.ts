@@ -1,5 +1,4 @@
 import { Injectable } from '@angular/core';
-import { Router } from '@angular/router';
 import { Title } from '@angular/platform-browser';
 
 @Injectable()
@@ -27,15 +26,15 @@ export class NavService {
   }
 
   setTitleByGeneratedTitle() {
-    this.titleService.setTitle(this.generateTitleHTML().replace(/<[^>]*>?/gm, '') + ' » Control de plagas');
+    this.titleService.setTitle(this.generateTitleHTML().replace(/<[^>]*>?/gm, ''));
   }
 
-  generateTitleHTML() {
+  generateTitleHTML(): string {
     if (!this.title.length) {
-      return 'Control de plagas';
+      return 'Sin título';
     }
 
-    let html = '';
+    let html: string = '';
 
     for (const title of this.title) {
       if (html.length) {
