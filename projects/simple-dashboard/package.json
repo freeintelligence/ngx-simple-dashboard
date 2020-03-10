@@ -1,6 +1,30 @@
 {
   "name": "ngx-simple-dashboard",
-  "version": "9.1.0",
+  "version": "9.0.0",
+  "description": "Create simple dashboard..",
+  "author": {
+    "name": "freeintelligence",
+    "email": "free04381@gmail.com"
+  },
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/freeintelligence/ngx-simple-dashboard.git"
+  },
+  "bugs": {
+    "url": "https://github.com/freeintelligence/ngx-simple-dashboard/issues"
+  },
+  "homepage": "https://github.com/freeintelligence/ngx-simple-dashboard#readme",
+  "keywords": [
+    "angular",
+    "angular9",
+    "ng",
+    "ngx",
+    "universal",
+    "simple",
+    "dashboard",
+    "admin"
+  ],
   "peerDependencies": {
     "@angular/common": "^9.0.2",
     "@angular/core": "^9.0.2",
