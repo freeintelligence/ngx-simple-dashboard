@@ -130,6 +130,7 @@ This is the main component and serves to create the dashboard base.
 |  [header] |  Header configuration | *`HeaderInterface`* | ```undefined``` |
 |  [menu] |  Menu settings |  *`MenuInterface`* | ```undefined``` |
 |  [content] |  Configuration of the content to display | *`ContentInterface`* | ```undefined``` |
+
 ***Interfaces:***
 ```typescript
 export interface Header {
