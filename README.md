@@ -33,7 +33,7 @@ yarn add ngx-simple-dashboard
 
 It is basically imported like any Angular module.
 
-```
+```typescript
 import { SimpleDashboardModule } from 'ngx-simple-dashboard';
 
 @NgModule({
@@ -49,13 +49,13 @@ export class AppModule { }
 The central idea is that it is used in the template of a module, so all the components below will be based on the package component.
 
 ***src/app/dashboard/dashboard.component.html***
-```
+```html
 <simple-dashboard-simple [header]="header" [menu]="menu" [content]="content">
   <router-outlet></router-outlet>
 </simple-dashboard-simple>
 ```
 ***src/app/dashboard/dashboard.component.ts***
-```
+```typescript
 import { Component, OnInit } from '@angular/core';
 import { Menu, Header, Content } from 'ngx-simple-dashboard';
 
@@ -118,7 +118,7 @@ The package has different elements that help to customize.
 This is the main component and serves to create the dashboard base.
 
 ***Selector:***
-```
+```html
 <simple-dashboard-simple>
   <h2>Content of the current section</h2>
 </simple-dashboard-simple>
@@ -131,7 +131,7 @@ This is the main component and serves to create the dashboard base.
 |  [menu] |  Menu settings |  *`MenuInterface`* | ```undefined``` |
 |  [content] |  Configuration of the content to display | *`ContentInterface`* | ```undefined``` |
 ***Interfaces:***
-```
+```typescript
 export interface Header {
   title?: string;
   color?: string;
@@ -174,7 +174,7 @@ This service basically serves to add a title to the page that is currently being
 
 ***Use:***
 ***src/app/dashboard/home/home.component.ts***
-```
+```typescript
 import { Component, OnInit, OnDestroy } from '@angular/core';
 import { NavService } from 'ngx-simple-dashboard';
 
