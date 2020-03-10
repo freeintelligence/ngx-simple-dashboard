@@ -5,7 +5,7 @@
 <mat-drawer-container class="drawer-container">
   <mat-drawer #drawer mode="side" class="drawer-side" opened>
     <mat-nav-list>
-      <custom-dashboard-sidenav-section *ngFor="let section of menu.sections" [section]="section"></custom-dashboard-sidenav-section>
+      <simple-dashboard-sidenav-section *ngFor="let section of menu.sections" [section]="section"></simple-dashboard-sidenav-section>
     </mat-nav-list>
   </mat-drawer>
 

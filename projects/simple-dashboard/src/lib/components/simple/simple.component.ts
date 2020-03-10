@@ -5,7 +5,7 @@ import { Content } from './../../interfaces/content.interface';
 import { NavService } from './../../services/nav.service';
 
 @Component({
-  selector: 'custom-dashboard-simple',
+  selector: 'simple-dashboard-simple',
   templateUrl: './simple.component.html',
   styleUrls: ['./simple.component.css']
 })

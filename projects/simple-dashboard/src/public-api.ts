@@ -1,8 +1,8 @@
 /*
- * Public API Surface of custom-dashboard
+ * Public API Surface of simple-dashboard
  */
 
-export * from './lib/custom-dashboard.module';
+export * from './lib/simple-dashboard.module';
 
 export * from './lib/interfaces/header.interface';
 export * from './lib/interfaces/menu.interface';

@@ -19,9 +19,9 @@
       "dom"
     ],
     "paths": {
-      "custom-dashboard": [
-        "dist/custom-dashboard/custom-dashboard",
-        "dist/custom-dashboard"
+      "simple-dashboard": [
+        "dist/simple-dashboard/simple-dashboard",
+        "dist/simple-dashboard"
       ]
     }
   },

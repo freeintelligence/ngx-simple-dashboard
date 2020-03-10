@@ -2,7 +2,7 @@ import { Component, OnInit, Input } from '@angular/core';
 import { MenuSection } from '../../interfaces/menu-section.interface';
 
 @Component({
-  selector: 'custom-dashboard-sidenav-section',
+  selector: 'simple-dashboard-sidenav-section',
   templateUrl: './sidenav-section.component.html',
   styleUrls: ['./sidenav-section.component.css']
 })

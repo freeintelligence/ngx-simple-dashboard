@@ -4,13 +4,13 @@
     "directive-selector": [
       true,
       "attribute",
-      "customDashboard",
+      "simpleDashboard",
       "camelCase"
     ],
     "component-selector": [
       true,
       "element",
-      "custom-dashboard",
+      "simple-dashboard",
       "kebab-case"
     ]
   }

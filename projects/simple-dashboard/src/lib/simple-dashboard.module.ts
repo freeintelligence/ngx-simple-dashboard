@@ -17,4 +17,4 @@ import { NavService } from './services/nav.service';
   exports: [SimpleComponent, SidenavSectionComponent],
   providers: [NavService],
 })
-export class CustomDashboardModule { }
+export class SimpleDashboardModule { }
