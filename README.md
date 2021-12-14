@@ -8,11 +8,12 @@ This package follows Angular versions. This means that if Angular is in its vers
 | Angular version  | Package version  |
 | ------------ | ------------ |
 |  ^9.0.0 | ^9.0.0  |
+|  ^13.0.0 | ^13.0.0  |
 
 
 ## Requirements
 
-- Tested and working with Angular 9 (**compatibility with previous versions is not ruled out**).
+- Tested and working with Angular 9 and 13 (**compatibility with previous versions is not ruled out**).
 - **Angular Material**:
 ```
 ng add @angular/material

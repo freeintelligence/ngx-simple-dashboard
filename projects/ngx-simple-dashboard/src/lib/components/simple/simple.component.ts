@@ -11,9 +11,9 @@ import { NavService } from './../../services/nav.service';
 })
 export class SimpleComponent implements OnInit {
 
-  @Input('header') header: Header;
-  @Input('menu') menu: Menu;
-  @Input('content') content: Content;
+  @Input('header') header!: Header;
+  @Input('menu') menu!: Menu;
+  @Input('content') content!: Content;
 
   constructor(public navService: NavService) { }
 

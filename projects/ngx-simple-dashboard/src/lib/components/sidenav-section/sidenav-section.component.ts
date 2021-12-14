@@ -8,7 +8,7 @@ import { MenuSection } from '../../interfaces/menu-section.interface';
 })
 export class SidenavSectionComponent implements OnInit {
 
-  @Input('section') section: MenuSection;
+  @Input('section') section!: MenuSection;
 
   constructor() { }
 
