@@ -1,9 +1,35 @@
 {
   "name": "ngx-simple-dashboard",
-  "version": "0.0.1",
+  "version": "13.1.0",
+  "description": "Create simple dashboard..",
+  "author": {
+    "name": "freeintelligence",
+    "email": "free04381@gmail.com"
+  },
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/freeintelligence/ngx-simple-dashboard.git"
+  },
+  "bugs": {
+    "url": "https://github.com/freeintelligence/ngx-simple-dashboard/issues"
+  },
+  "homepage": "https://github.com/freeintelligence/ngx-simple-dashboard#readme",
+  "keywords": [
+    "angular",
+    "angular13",
+    "ng",
+    "ngx",
+    "universal",
+    "simple",
+    "dashboard",
+    "admin"
+  ],
   "peerDependencies": {
     "@angular/common": "^13.3.0",
-    "@angular/core": "^13.3.0"
+    "@angular/core": "^13.3.0",
+    "@angular/material": "^13.3.6",
+    "@angular/router": "~13.3.0"
   },
   "dependencies": {
     "tslib": "^2.3.0"

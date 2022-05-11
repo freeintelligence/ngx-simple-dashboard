@@ -1,0 +1,18 @@
+.drawer-container {
+  width: 100%;
+  height: calc(100% - 64px);
+}
+
+.drawer-side {
+  width: 256px;
+}
+
+.drawer-content {
+  height: 100%;
+}
+
+.content-container {
+  width: 100%;
+  height: calc(100% - 64px);
+  box-sizing: border-box;
+}

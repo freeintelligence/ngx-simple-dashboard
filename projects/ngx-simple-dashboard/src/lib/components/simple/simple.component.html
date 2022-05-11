@@ -1,0 +1,22 @@
+<mat-toolbar [color]="header?.color">
+  <span *ngIf="header?.title">{{ header?.title }}</span>
+</mat-toolbar>
+
+<mat-drawer-container class="drawer-container">
+  <mat-drawer #drawer mode="side" class="drawer-side" opened>
+    <mat-nav-list>
+      <simple-dashboard-sidenav-section *ngFor="let section of menu.sections" [section]="section"></simple-dashboard-sidenav-section>
+    </mat-nav-list>
+  </mat-drawer>
+
+  <mat-drawer-content class="drawer-content">
+    <mat-toolbar [color]="content?.header?.color">
+      <button mat-icon-button (click)="drawer.toggle()"><mat-icon>menu</mat-icon></button>
+      <span [innerHtml]="navService.generateTitleHTML()"></span>
+    </mat-toolbar>
+
+    <div class="content-container">
+      <ng-content></ng-content>
+    </div>
+  </mat-drawer-content>
+</mat-drawer-container>
