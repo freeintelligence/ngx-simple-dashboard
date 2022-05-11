@@ -18,6 +18,7 @@ export class AppComponent {
     dense: true,
     collapsedHeight: '48px',
     expandedHeight: '48px',
+    itemHeight: '32px',
     sections: [
       {
         expansion: true,

@@ -5,7 +5,12 @@
     }}</mat-expansion-panel-header>
 
     <mat-nav-list [attr.dense]="menu.dense ? menu.dense : null">
-      <a *ngFor="let item of section.items" mat-list-item [routerLink]="item.href">
+      <a
+        *ngFor="let item of section.items"
+        mat-list-item
+        [routerLink]="item.href"
+        [style.height]="menu?.itemHeight || (menu.dense ? '32px' : '48px')"
+      >
         <mat-icon *ngIf="item.icon" matListIcon>{{ item.icon }}</mat-icon>
         <img *ngIf="item.avatar" matListAvatar [src]="item.avatar" />
 
@@ -19,7 +24,7 @@
 <ng-container *ngIf="!section.expansion">
   <h3 *ngIf="section.title" matSubheader>{{ section.title }}</h3>
 
-  <a *ngFor="let item of section.items" mat-list-item [routerLink]="item.href">
+  <a *ngFor="let item of section.items" mat-list-item [routerLink]="item.href" [class.padding-if-dense]="menu.dense">
     <mat-icon *ngIf="item.icon" matListIcon>{{ item.icon }}</mat-icon>
     <img *ngIf="item.avatar" matListAvatar [src]="item.avatar" />
 
