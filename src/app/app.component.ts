@@ -4,12 +4,14 @@ import { Menu, Header, Content } from 'ngx-simple-dashboard';
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
-  styleUrls: ['./app.component.scss']
+  styleUrls: ['./app.component.scss'],
 })
 export class AppComponent {
   header: Header = {
+    disabled: false,
     title: 'Title dashboard',
     color: 'primary',
+    type: 'module',
   };
 
   menu: Menu = {
@@ -22,7 +24,7 @@ export class AppComponent {
             href: '/dashboard',
             icon: 'home',
           },
-        ]
+        ],
       },
       {
         title: 'Account',
@@ -31,15 +33,16 @@ export class AppComponent {
             title: 'Logout',
             href: '/logout',
             icon: 'exit_to_app',
-          }
-        ]
-      }
-    ]
+          },
+        ],
+      },
+    ],
   };
 
   content: Content = {
     header: {
       color: 'primary',
-    }
-  }
+      disabled: true,
+    },
+  };
 }

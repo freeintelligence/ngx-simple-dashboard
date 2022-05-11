@@ -1,17 +1,40 @@
-<mat-toolbar [color]="header?.color">
-  <span *ngIf="header?.title">{{ header?.title }}</span>
-</mat-toolbar>
+<ng-container *ngIf="header && header?.title && !header?.disabled">
+  <mat-toolbar
+    *ngIf="header?.type === 'general' || !header?.type"
+    [color]="header?.color"
+  >
+    <span *ngIf="header?.title">{{ header?.title }}</span>
+  </mat-toolbar>
+
+  <mat-toolbar
+    *ngIf="header?.type === 'module'"
+    [color]="content?.header?.color"
+  >
+    <button mat-icon-button (click)="drawer.toggle()">
+      <mat-icon>menu</mat-icon>
+    </button>
+    <span [innerHtml]="navService.generateTitleHTML()"></span>
+  </mat-toolbar>
+</ng-container>
 
 <mat-drawer-container class="drawer-container">
   <mat-drawer #drawer mode="side" class="drawer-side" opened>
     <mat-nav-list>
-      <simple-dashboard-sidenav-section *ngFor="let section of menu.sections" [section]="section"></simple-dashboard-sidenav-section>
+      <simple-dashboard-sidenav-section
+        *ngFor="let section of menu.sections"
+        [section]="section"
+      ></simple-dashboard-sidenav-section>
     </mat-nav-list>
   </mat-drawer>
 
   <mat-drawer-content class="drawer-content">
-    <mat-toolbar [color]="content?.header?.color">
-      <button mat-icon-button (click)="drawer.toggle()"><mat-icon>menu</mat-icon></button>
+    <mat-toolbar
+      *ngIf="content && content?.header && !content?.header?.disabled"
+      [color]="content?.header?.color"
+    >
+      <button mat-icon-button (click)="drawer.toggle()">
+        <mat-icon>menu</mat-icon>
+      </button>
       <span [innerHtml]="navService.generateTitleHTML()"></span>
     </mat-toolbar>
 
