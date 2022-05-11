@@ -13,5 +13,7 @@ export interface MenuSectionItem {
 
 export interface MenuSection {
   title?: string;
+  expansion?: boolean;
+  expanded?: boolean;
   items: MenuSectionItem[],
 }

@@ -15,24 +15,162 @@ export class AppComponent {
   };
 
   menu: Menu = {
+    dense: true,
     sections: [
       {
-        title: 'Navigation',
+        expansion: true,
+        expanded: true,
+        title: 'Banner Home',
         items: [
           {
-            title: 'Home',
-            href: '/dashboard',
+            title: 'Indicadores Sitio',
+            href: '/admin/indicators-config',
+            icon: 'settings',
+          },
+          {
+            title: 'Mensaje Rotativo',
+            href: '/admin/messages-config',
+            icon: 'settings',
+          },
+        ],
+      },
+      {
+        expansion: true,
+        expanded: true,
+        title: 'Vinculaciones',
+        items: [
+          {
+            title: 'Activas',
+            href: '/admin/entailments-index',
+            icon: 'share',
+          },
+          {
+            title: 'No Vigentes',
+            href: '/admin/entailments-no-active',
+            icon: 'unpublished',
+          },
+        ],
+      },
+      {
+        expansion: true,
+        expanded: true,
+        title: 'Mantenedor de Usuarios',
+        items: [
+          {
+            title: 'Usuarios',
+            href: '/admin/users',
+            icon: 'people',
+          },
+          {
+            title: 'Organizaciones',
+            href: '/admin/companies',
             icon: 'home',
           },
         ],
       },
       {
-        title: 'Account',
+        expansion: true,
+        expanded: true,
+        title: 'Servicios Comunicacionales',
         items: [
           {
-            title: 'Logout',
-            href: '/logout',
-            icon: 'exit_to_app',
+            title: 'Actividades',
+            href: '/admin/activities',
+            icon: 'local_activity',
+          },
+          {
+            title: 'Tipos de Eventos',
+            href: '/admin/event-types',
+            icon: 'event',
+          },
+          {
+            title: 'Sub Tipos de Eventos',
+            href: '/admin/event-subtypes',
+            icon: 'emoji_events',
+          },
+          {
+            title: 'Modalidades',
+            href: '/admin/modalities',
+            icon: 'apartment',
+          },
+          {
+            title: 'Áreas Temáticas',
+            href: '/admin/thematic-areas',
+            icon: 'area_chart',
+          },
+          {
+            title: 'Perfiles Participantes',
+            href: '/admin/participating-profiles',
+            icon: 'group',
+          },
+        ],
+      },
+      {
+        expansion: true,
+        expanded: true,
+        title: 'Paramétricas',
+        items: [
+          {
+            title: 'Tipos de Experiencia',
+            href: '/admin/type-experiences',
+            icon: 'home',
+          },
+          {
+            title: 'Recursos Financieros',
+            href: '/admin/source-resources',
+            icon: 'home',
+          },
+          {
+            title: 'Actividades Económicas',
+            href: '/admin/economic-activities',
+            icon: 'home',
+          },
+          {
+            title: 'Tipos de Organizaciones',
+            href: '/admin/type-companies',
+            icon: 'home',
+          },
+          {
+            title: 'Países',
+            href: '/admin/countries',
+            icon: 'flag',
+          },
+        ],
+      },
+      {
+        expansion: true,
+        expanded: true,
+        title: 'Contenidos V1',
+        items: [
+          {
+            title: 'Fondos Públicos Abiertos',
+            href: '/admin/open-public-funds',
+            icon: 'public',
+          },
+          {
+            title: 'Noticias',
+            href: '/admin/news',
+            icon: 'feed',
+          },
+          {
+            title: 'Indicadores',
+            href: '/admin/indicators',
+            icon: 'trending_up',
+          },
+          {
+            title: 'Links de Interés',
+            href: '/admin/links-of-interest',
+            icon: 'link',
+          },
+          {
+            title: 'Tipos de Visas',
+            href: '/admin/type-visas',
+            icon: 'perm_identity',
+          },
+          {
+            title: 'Tipos de Grados',
+            href: '/admin/type-grades',
+            icon: 'grade',
           },
         ],
       },

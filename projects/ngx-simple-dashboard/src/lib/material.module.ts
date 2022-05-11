@@ -6,6 +6,7 @@ import { MatIconModule } from '@angular/material/icon';
 import { MatBadgeModule } from '@angular/material/badge';
 import { MatButtonModule } from '@angular/material/button';
 import { MatDividerModule } from '@angular/material/divider';
+import { MatExpansionModule } from '@angular/material/expansion';
 
 @NgModule({
   declarations: [],
@@ -17,6 +18,7 @@ import { MatDividerModule } from '@angular/material/divider';
     MatBadgeModule,
     MatButtonModule,
     MatDividerModule,
+    MatExpansionModule,
   ],
   exports: [
     MatToolbarModule,
@@ -26,6 +28,7 @@ import { MatDividerModule } from '@angular/material/divider';
     MatBadgeModule,
     MatButtonModule,
     MatDividerModule,
+    MatExpansionModule,
   ]
 })
 export class MaterialModule { }
