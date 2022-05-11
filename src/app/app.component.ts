@@ -16,6 +16,8 @@ export class AppComponent {
 
   menu: Menu = {
     dense: true,
+    collapsedHeight: '48px',
+    expandedHeight: '48px',
     sections: [
       {
         expansion: true,

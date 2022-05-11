@@ -1,6 +1,8 @@
 <ng-container *ngIf="section.expansion">
   <mat-expansion-panel [class.mat-elevation-z0]="true" [attr.dense]="menu.dense ? menu.dense : null" [expanded]="section.expanded">
-    <mat-expansion-panel-header>{{ section.title }}</mat-expansion-panel-header>
+    <mat-expansion-panel-header [collapsedHeight]="menu?.collapsedHeight || '48px'" [expandedHeight]="menu?.expandedHeight || '48px'">{{
+      section.title
+    }}</mat-expansion-panel-header>
 
     <mat-nav-list [attr.dense]="menu.dense ? menu.dense : null">
       <a *ngFor="let item of section.items" mat-list-item [routerLink]="item.href">
