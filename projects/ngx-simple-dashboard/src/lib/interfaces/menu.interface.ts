@@ -5,5 +5,6 @@ export interface Menu {
   collapsedHeight?: string;
   expandedHeight?: string;
   itemHeight?: string;
+  expandedWidth?: string;
   sections: MenuSection[],
 }

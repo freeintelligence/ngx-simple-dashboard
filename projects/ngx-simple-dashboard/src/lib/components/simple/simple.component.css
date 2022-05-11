@@ -6,9 +6,9 @@
   height: calc(100% - 64px);
 }
 
-.drawer-side {
+/* .drawer-side {
   width: 256px;
-}
+} */
 
 .drawer-content {
   height: 100%;

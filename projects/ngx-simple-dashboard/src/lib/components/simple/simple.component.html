@@ -12,7 +12,7 @@
 </ng-container>
 
 <mat-drawer-container class="drawer-container" [class.with-header]="showHeader()">
-  <mat-drawer #drawer mode="side" class="drawer-side" opened>
+  <mat-drawer #drawer mode="side" class="drawer-side" [style.width]="menu.expandedWidth || '256px'" opened>
     <mat-nav-list [attr.dense]="menu.dense ? menu.dense : null">
       <simple-dashboard-sidenav-section *ngFor="let section of menu.sections" [section]="section" [menu]="menu"></simple-dashboard-sidenav-section>
     </mat-nav-list>
