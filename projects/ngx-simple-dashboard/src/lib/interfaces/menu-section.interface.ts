@@ -13,6 +13,7 @@ export interface MenuSectionItem {
 
 export interface MenuSection {
   title?: string;
+  icon?: string;
   expansion?: boolean;
   expanded?: boolean;
   items: MenuSectionItem[],

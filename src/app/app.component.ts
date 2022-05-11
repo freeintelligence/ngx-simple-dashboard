@@ -18,12 +18,14 @@ export class AppComponent {
     dense: true,
     collapsedHeight: '48px',
     expandedHeight: '48px',
+    expandedWidth: '312px',
     itemHeight: '32px',
     sections: [
       {
         expansion: true,
         expanded: true,
         title: 'Banner Home',
+        icon: 'home',
         items: [
           {
             title: 'Indicadores Sitio',
