@@ -1,0 +1,54 @@
+<ng-container *ngIf="section.expansion">
+  <mat-expansion-panel
+    class="for-menu-mat-expansion-panel"
+    [class.mat-elevation-z0]="true"
+    [attr.dense]="menu.dense ? menu.dense : null"
+    [expanded]="section.expanded"
+  >
+    <mat-expansion-panel-header
+      [collapsedHeight]="menu?.collapsedHeight || '48px'"
+      [expandedHeight]="menu?.expandedHeight || '48px'"
+    >
+      <mat-panel-title *ngIf="section?.icon">
+        <mat-icon>{{ section.icon }}</mat-icon>
+      </mat-panel-title>
+      <mat-panel-description>
+        {{ section.title }}
+      </mat-panel-description>
+    </mat-expansion-panel-header>
+
+    <mat-nav-list [attr.dense]="menu.dense ? menu.dense : null">
+      <a
+        *ngFor="let item of section.items"
+        mat-list-item
+        [routerLink]="item.href"
+        [style.height]="menu?.itemHeight || (menu.dense ? '32px' : '48px')"
+      >
+        <mat-icon *ngIf="item.icon" matListIcon>{{ item.icon }}</mat-icon>
+        <img *ngIf="item.avatar" matListAvatar [src]="item.avatar" />
+
+        <h4 *ngIf="item.title" matLine>{{ item.title }}</h4>
+        <p *ngFor="let line of item.lines" matLine>{{ line.text }}</p>
+      </a>
+    </mat-nav-list>
+  </mat-expansion-panel>
+</ng-container>
+
+<ng-container *ngIf="!section.expansion">
+  <h3 *ngIf="section.title" matSubheader>{{ section.title }}</h3>
+
+  <a
+    *ngFor="let item of section.items"
+    mat-list-item
+    [routerLink]="item.href"
+    [class.padding-if-dense]="menu.dense"
+  >
+    <mat-icon *ngIf="item.icon" matListIcon>{{ item.icon }}</mat-icon>
+    <img *ngIf="item.avatar" matListAvatar [src]="item.avatar" />
+
+    <h4 *ngIf="item.title" matLine>{{ item.title }}</h4>
+    <p *ngFor="let line of item.lines" matLine>{{ line.text }}</p>
+  </a>
+
+  <mat-divider></mat-divider>
+</ng-container>
