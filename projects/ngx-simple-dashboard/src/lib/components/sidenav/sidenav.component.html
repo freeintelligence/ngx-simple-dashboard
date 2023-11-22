@@ -17,14 +17,22 @@
       </mat-panel-description>
     </mat-expansion-panel-header>
 
-    <mat-nav-list [attr.dense]="menu.dense ? menu.dense : null">
-      <a
+    <!-- <mat-nav-list [attr.dense]="menu.dense ? menu.dense : null"> -->
+    <mat-nav-list>
+      <!-- <a
         *ngFor="let item of section.items"
         mat-list-item
         [routerLink]="item.href"
         [style.height]="menu?.itemHeight || (menu.dense ? '32px' : '48px')"
+      > -->
+      <a
+        *ngFor="let item of section.items"
+        mat-list-item
+        [routerLink]="item.href"
       >
-        <mat-icon *ngIf="item.icon" matListIcon>{{ item.icon }}</mat-icon>
+        <mat-icon matListItemIcon *ngIf="item.icon" matListIcon>{{
+          item.icon
+        }}</mat-icon>
         <img *ngIf="item.avatar" matListAvatar [src]="item.avatar" />
 
         <h4 *ngIf="item.title" matLine>{{ item.title }}</h4>

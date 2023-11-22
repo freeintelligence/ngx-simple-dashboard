@@ -3,7 +3,7 @@
     *ngIf="header?.type === 'general' || !header?.type"
     [color]="header?.color"
   >
-    <span *ngIf="header?.title">{{ header?.title }}mm</span>
+    <span *ngIf="header?.title">{{ header?.title }}</span>
   </mat-toolbar>
 
   <mat-toolbar *ngIf="header?.type === 'module'" [color]="header?.color">
@@ -25,7 +25,8 @@
     [style.width]="menu.expandedWidth || '256px'"
     opened
   >
-    <mat-nav-list [attr.dense]="menu.dense ? menu.dense : null">
+    <!-- <mat-nav-list [attr.dense]="menu.dense ? menu.dense : null"> -->
+    <mat-nav-list>
       <ngx-simple-dashboard-sidenav
         *ngFor="let section of menu.sections"
         [section]="section"

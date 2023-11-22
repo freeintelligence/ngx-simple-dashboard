@@ -16,9 +16,7 @@ export class NgxSimpleDashboardBaseComponent implements OnInit {
 
   constructor(public navService: NgxSimpleDashboardNavService) {}
 
-  ngOnInit(): void {
-    console.log('header', this.header);
-  }
+  ngOnInit(): void {}
 
   showHeader() {
     return (

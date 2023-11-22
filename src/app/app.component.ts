@@ -11,11 +11,11 @@ export class AppComponent {
     disabled: false,
     title: 'Title dashboard',
     color: 'primary',
-    type: 'module',
+    type: 'general',
   };
 
   menu: Menu = {
-    dense: true,
+    dense: false,
     collapsedHeight: '48px',
     expandedHeight: '48px',
     expandedWidth: '312px',
